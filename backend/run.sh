@@ -1,0 +1,4 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+poetry run python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+

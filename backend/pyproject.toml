@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "etf-trading-backend"
+version = "1.0.0"
+description = "ETF 자동매매 시스템 백엔드"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+pydantic = "^2.10.0"
+pydantic-settings = "^2.6.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+bcrypt = "^4.1.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+httpx = "^0.25.2"
+python-dotenv = "^1.0.0"
+python-multipart = "^0.0.6"
+alembic = "^1.12.1"
+pandas = "^2.2.0"
+email-validator = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
